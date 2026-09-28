@@ -217,6 +217,37 @@ document.addEventListener('DOMContentLoaded', function () {
         'Security, scalability, and disaster recovery roadmap audits'
       ],
       tech: ['Enterprise Architecture', 'Agile', 'UML', 'API Design', 'Consulting']
+    },
+    'networking': {
+      title: 'Networking',
+      icon: 'fa-network-wired',
+      badge: 'Enterprise Infrastructure & Security',
+      desc: 'We design, deploy, and maintain secure, high-performance networking infrastructures for businesses. From structured cabling and multi-office LAN/WAN setup to enterprise routing, switching, and robust firewall security, we keep your business connected and protected.',
+      bullets: [
+        'Enterprise LAN/WAN Architecture, Structured Cabling & Topology Design',
+        'Router, Switch & Gateway Configuration (Cisco, MikroTik, Juniper)',
+        'Next-Gen Firewall Deployment, VPN & Cyber Threat Protection',
+        'Wi-Fi Access Point Planning, Mesh Networks & Wireless Controllers',
+        'Network Performance Monitoring, Bandwidth Optimization & QoS',
+        'Disaster Recovery, Network Redundancy & 24/7 Troubleshooting'
+      ],
+      tech: ['Cisco', 'MikroTik', 'Fortinet', 'Wireshark', 'TCP/IP', 'VLAN', 'VPN', 'Firewall']
+    },
+    'data-analytics': {
+      title: 'Data Analytics',
+      icon: 'fa-chart-pie',
+      badge: 'Business Intelligence & Data-Driven Insights',
+      desc: 'We transform raw and complex business data into meaningful insights that support smarter decisions and measurable business growth. From data cleaning and analysis to interactive dashboards and business intelligence solutions, we help organizations uncover trends, monitor key metrics, and turn data into actionable strategies.',
+      bullets: [
+        'Data Cleaning, Transformation & Preparation',
+        'Exploratory Data Analysis and Business Performance Analysis',
+        'Interactive Power BI & Tableau Dashboards',
+        'KPI Reporting and Automated Business Reports',
+        'Customer, Sales, Financial & Operational Analytics',
+        'Predictive Analytics and Data-Driven Forecasting',
+        'Data Integration and Database Analytics'
+      ],
+      tech: ['Python', 'Pandas', 'NumPy', 'SQL', 'MySQL', 'PostgreSQL', 'Excel', 'Power BI', 'Tableau']
     }
   };
 
@@ -233,6 +264,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (s.includes('ai') || s.includes('artificial'))            return 'ai-solutions';
     if (s.includes('marketing') || s.includes('digital'))        return 'digital-marketing';
     if (s.includes('consulting') || s.includes('it'))            return 'it-consulting';
+    if (s.includes('network'))                                   return 'networking';
+    if (s.includes('data') || s.includes('analytics'))            return 'data-analytics';
     return s;
   }
 
